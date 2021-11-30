@@ -7,6 +7,7 @@ public class Item {
     //  //// VARIABLES /////////////////////////////////////////////
     private String name;
     private double price;
+    private int index;
 
     //  //// METHODS ///////////////////////////////////////////////
 
@@ -35,6 +36,10 @@ public class Item {
         this.price = price;
     }
 
+    public void setIndex (int index) {
+        this.index = index;
+    }
+
     //  **** GET METHODS *******************************************
 
     public String getName() {
@@ -47,5 +52,9 @@ public class Item {
 
     public String getItem() {
         return String.format("Item: %s | price: S%.2f", this.name, this.price);
+    }
+
+    pubic int setIndex() {
+        return this.index;
     }
 }
