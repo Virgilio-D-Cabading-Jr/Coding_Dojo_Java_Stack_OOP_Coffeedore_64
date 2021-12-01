@@ -51,10 +51,10 @@ public class Item {
     }
 
     public String getItem() {
-        return String.format("Item: %s | price: S%.2f", this.name, this.price);
+        return String.format("%d: %s -- S%.2f", this.index, this.name, this.price);
     }
 
-    pubic int setIndex() {
+    public int getIndex() {
         return this.index;
     }
 }
